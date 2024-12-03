@@ -1,98 +1,80 @@
-# Welcome to React Router!
+<p align="center">
+  <a href="https://clerk.com?utm_source=github&utm_medium=clerk_docs" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./public/light-logo.png">
+      <img alt="Clerk Logo for light background" src="./public/dark-logo.png" height="64">
+    </picture>
+  </a>
+  <br />
+</p>
+<div align="center">
+  <h1>
+    Clerk and React Router Quickstart
+  </h1>
+  <a href="https://www.npmjs.com/package/@clerk/react-router">
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/react-router" />
+  </a>
+  <a href="https://discord.com/invite/b5rXHjAg7A">
+    <img alt="Discord" src="https://img.shields.io/discord/856971667393609759?color=7389D8&label&logo=discord&logoColor=ffffff" />
+  </a>
+  <a href="https://twitter.com/clerkdev">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url.svg?label=%40clerkdev&style=social&url=https%3A%2F%2Ftwitter.com%2Fclerkdev" />
+  </a>
+  <br />
+  <br />
+  <img alt="Clerk Hero Image" src="./public/hero.png">
+</div>
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Introduction
 
-## Features
+Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React application.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+After following the [Clerk React Router quickstart](https://clerk.com/docs/quickstarts/react-router), you will have learned how to:
 
-## Getting Started
+- Install `@clerk/react-router`
+- Set your Clerk API keys
+- Configure rootAuthLoader
+- Add `<ClerkProvider>`
+- Add Clerk components
 
-### Installation
+## Deploy
 
-Install the dependencies:
+Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
-```bash
-npm install
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerk%2Fclerk-react-router-quickstart&env=CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Freact-router&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Freact-router)
 
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
+## Running the template
 
 ```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+git clone https://github.com/clerk/clerk-react-router-quickstart
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+To run the example locally, you need to:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+1. Sign up for a Clerk account at [https://clerk.com](https://dashboard.clerk.com/sign-up?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart).
 
-### DIY Deployment
+2. Go to the [Clerk dashboard](https://dashboard.clerk.com?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart) and create an application.
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.example).
 
-Make sure to deploy the output of `npm run build`
+4. `npm install` the required dependencies.
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+5. `npm run dev` to launch the development server.
 
-## Styling
+## Learn more
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+To learn more about Clerk and React, check out the following resources:
 
----
+- [Quickstart: Get started with React Router and Clerk](https://clerk.com/docs/quickstarts/react-router?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart)
 
-Built with ❤️ using React Router.
+- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart)
+
+## Found an issue or want to leave feedback
+
+Feel free to create a support thread on our [Discord](https://clerk.com/discord). Our support team will be happy to assist you in the `#support` channel.
+
+## Connect with us
+
+You can discuss ideas, ask questions, and meet others from the community in our [Discord](https://discord.com/invite/b5rXHjAg7A).
+
+If you prefer, you can also find support through our [Twitter](https://twitter.com/ClerkDev), or you can [email](mailto:support@clerk.dev) us!
