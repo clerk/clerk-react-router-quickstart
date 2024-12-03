@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://clerk.com?utm_source=github&utm_medium=clerk_docs" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./public/light-logo.png">
-      <img alt="Clerk Logo for light background" src="./public/dark-logo.png" height="64">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/clerk/clerk-react-quickstart/main/public/light-logo.png">
+      <img alt="Clerk Logo for light background" src="https://raw.githubusercontent.com/clerk/clerk-react-quickstart/main/public/dark-logo.png" height="64">
     </picture>
   </a>
   <br />
@@ -22,7 +22,7 @@
   </a>
   <br />
   <br />
-  <img alt="Clerk Hero Image" src="./public/hero.png">
+  <img alt="Clerk Hero Image" src="https://raw.githubusercontent.com/clerk/clerk-react-quickstart/main/public/hero.png">
 </div>
 
 ## Introduction
