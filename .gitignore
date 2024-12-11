@@ -2,7 +2,6 @@
 !.env.example
 .DS_Store
 .react-router/
-build
+/build/
 node_modules
 *.tsbuildinfo
-.seccorc
