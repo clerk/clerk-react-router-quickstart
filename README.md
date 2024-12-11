@@ -34,8 +34,7 @@ After following the [Clerk React Router quickstart](https://clerk.com/docs/quick
 - Install `@clerk/react-router`
 - Set your Clerk API keys
 - Configure rootAuthLoader
-- Add `<ClerkProvider>`
-- Add Clerk components
+- Add `<ClerkProvider>` and Clerk components
 
 ## Deploy
 
@@ -68,6 +67,7 @@ To learn more about Clerk and React, check out the following resources:
 - [Quickstart: Get started with React Router and Clerk](https://clerk.com/docs/quickstarts/react-router?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart)
 
 - [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=react-router-quickstart)
+- [React Router Documentation](https://reactrouter.com/home)
 
 ## Found an issue or want to leave feedback
 
