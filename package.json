@@ -9,10 +9,10 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@clerk/react-router": "^1.2.0",
+    "@clerk/react-router": "^1.2.3",
     "@react-router/node": "^7.5.0",
     "@react-router/serve": "^7.5.0",
-    "isbot": "^5.1.25",
+    "isbot": "^5.1.26",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.0"
@@ -21,7 +21,7 @@
     "@react-router/dev": "^7.5.0",
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
     "postcss": "^8.5.3",
