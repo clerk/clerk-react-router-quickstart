@@ -6,15 +6,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { rootAuthLoader } from "@clerk/react-router/ssr.server";
+import { clerkMiddleware, rootAuthLoader } from "@clerk/react-router/server";
 import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/react-router";
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
-export async function loader(args: Route.LoaderArgs) {
-  return rootAuthLoader(args)
-}
+export const middleware: Route.MiddlewareFunction[] = [clerkMiddleware()]
+
+export const loader = (args: Route.LoaderArgs) => rootAuthLoader(args)
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
