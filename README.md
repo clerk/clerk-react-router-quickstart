@@ -33,7 +33,7 @@ After following the [Clerk React Router quickstart](https://clerk.com/docs/quick
 
 - Install `@clerk/react-router`
 - Set your Clerk API keys
-- Configure rootAuthLoader
+- Add `clerkMiddleware()` and `rootAuthLoader()` to your app
 - Add `<ClerkProvider>` and Clerk components
 
 ## Deploy

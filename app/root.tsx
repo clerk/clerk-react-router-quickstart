@@ -1,6 +1,6 @@
+import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/react-router'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import { clerkMiddleware, rootAuthLoader } from '@clerk/react-router/server'
-import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/react-router'
 
 import type { Route } from './+types/root'
 import stylesheet from './app.css?url'
@@ -56,9 +56,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
           <UserButton />
         </SignedIn>
       </header>
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
     </ClerkProvider>
   )
 }
