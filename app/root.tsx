@@ -1,4 +1,4 @@
-import { ClerkProvider, Show, UserButton, SignInButton } from '@clerk/react-router'
+import { ClerkProvider, Show, UserButton, SignInButton, SignUpButton } from '@clerk/react-router'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import { clerkMiddleware, rootAuthLoader } from '@clerk/react-router/server'
 
@@ -47,11 +47,10 @@ export default function App({ loaderData }: Route.ComponentProps) {
     // Pass the `loaderData` to the `<ClerkProvider>` component
     <ClerkProvider loaderData={loaderData}>
       <header className="flex items-center justify-center py-8 px-4">
-        {/* Show the sign-in button when the user is signed out */}
         <Show when="signed-out">
           <SignInButton />
+          <SignUpButton />
         </Show>
-        {/* Show the user button when the user is signed in */}
         <Show when="signed-in">
           <UserButton />
         </Show>
