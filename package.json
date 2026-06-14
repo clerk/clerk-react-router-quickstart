@@ -9,13 +9,13 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@clerk/react-router": "^3.1.2",
+    "@clerk/react-router": "^3.4.2",
     "@react-router/node": "7.12.0",
     "@react-router/serve": "7.12.0",
     "isbot": "^5.1.31",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-router": "7.12.0"
+    "react-router": "7.15.0"
   },
   "devDependencies": {
     "@react-router/dev": "7.12.0",
@@ -25,7 +25,7 @@
     "@types/react-dom": "^19.2.3",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
-    "vite": "^7.1.7",
+    "vite": "^7.3.2",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "packageManager": "pnpm@10.33.4+sha512.1c67b3b359b2d408119ba1ed289f34b8fc3c6873412bec6fd264fbdc82489e510fcbecb9ce9d22dae7f3b76269d8441046014bdca53b9979cd7a561ad631b800"
