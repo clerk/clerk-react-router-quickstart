@@ -1,4 +1,4 @@
-import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/react-router'
+import { ClerkProvider, Show, UserButton, SignInButton } from '@clerk/react-router';
 import { isRouteErrorResponse, Link, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import { clerkMiddleware, rootAuthLoader } from '@clerk/react-router/server'
 
@@ -48,18 +48,18 @@ export default function App({ loaderData }: Route.ComponentProps) {
     <ClerkProvider loaderData={loaderData}>
       <header className="flex items-center justify-center py-8 px-4">
         {/* Show the sign-in button when the user is signed out */}
-        <SignedOut>
+        <Show when="signed-out">
           <SignInButton />
-        </SignedOut>
+        </Show>
         {/* Show the user button when the user is signed in */}
-        <SignedIn>
+        <Show when="signed-in">
           <Link to="/protected">Protected</Link>
           <UserButton />
-        </SignedIn>
+        </Show>
       </header>
       <Outlet />
     </ClerkProvider>
-  )
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

@@ -4,8 +4,8 @@ import type { Route } from './+types/protected'
 
 export async function loader(args: Route.LoaderArgs) {
   // Use `getAuth()` to read the session on the server and protect this route.
-  // Unlike <SignedIn>, which only controls what renders, this is the real
-  // access check: a signed-out user who navigates here directly is redirected.
+  // Unlike the `<Show>` component, which only controls what renders, this is
+  // the real access check: a signed-out user who navigates here is redirected.
   const { isAuthenticated, userId } = await getAuth(args)
 
   if (!isAuthenticated) {
