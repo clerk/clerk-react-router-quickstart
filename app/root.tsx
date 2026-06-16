@@ -1,5 +1,5 @@
 import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/react-router'
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import { isRouteErrorResponse, Link, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import { clerkMiddleware, rootAuthLoader } from '@clerk/react-router/server'
 
 import type { Route } from './+types/root'
@@ -53,6 +53,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
         </SignedOut>
         {/* Show the user button when the user is signed in */}
         <SignedIn>
+          <Link to="/protected">Protected</Link>
           <UserButton />
         </SignedIn>
       </header>
